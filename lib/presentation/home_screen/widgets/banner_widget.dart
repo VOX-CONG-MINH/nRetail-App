@@ -10,7 +10,7 @@ class BannerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final PageController _pageController = PageController();
+    final pageController = PageController();
 
     return BlocBuilder<HomeScreenBloc, HomeScreenState>(
       builder: (context, state) {
@@ -20,7 +20,7 @@ class BannerWidget extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 10),
               height: 200,
               child: PageView.builder(
-                controller: _pageController,
+                controller: pageController,
                 itemCount: banners.length,
                 onPageChanged: (index) {
                   context.read<HomeScreenBloc>().add(

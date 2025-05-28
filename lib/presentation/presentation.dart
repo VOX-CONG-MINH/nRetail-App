@@ -1,7 +1,6 @@
 export 'core/base/base_page_state.dart';
 export 'core/gen/assets.gen.dart';
 export 'core/styles/app_colors.dart';
-export 'domain.dart';
 export 'home_screen/bloc/home_screen_bloc.dart';
 export 'home_screen/home_screen.dart';
 export 'home_screen/widgets/banner_widget.dart';

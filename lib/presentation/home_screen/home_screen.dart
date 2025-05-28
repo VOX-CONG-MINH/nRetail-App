@@ -54,7 +54,6 @@ class _HomeScreenState extends BasePageState<HomeScreen, HomeScreenBloc> {
       name: 'Carefree Breathable',
       imageUrl:
           'https://www.rosepharmacy.com/ph1/wp-content/uploads/2020/01/17261-800x931.webp',
-
       price: 47.40,
     ),
     Product(
@@ -62,7 +61,6 @@ class _HomeScreenState extends BasePageState<HomeScreen, HomeScreenBloc> {
       name: 'Carefree Breathable 40',
       imageUrl:
           'https://www.rosepharmacy.com/ph1/wp-content/uploads/2020/01/67413-800x931.webp',
-
       price: 23.25,
     ),
     Product(
@@ -77,7 +75,6 @@ class _HomeScreenState extends BasePageState<HomeScreen, HomeScreenBloc> {
       name: 'Carefree Breathable',
       imageUrl:
           'https://www.rosepharmacy.com/ph1/wp-content/uploads/2020/01/17261-800x931.webp',
-
       price: 47.40,
     ),
     Product(
@@ -85,7 +82,6 @@ class _HomeScreenState extends BasePageState<HomeScreen, HomeScreenBloc> {
       name: 'Band Aid Plaster Strips 50 Pack',
       imageUrl:
           'https://www.oceaniamedical.co.nz/cdn/shop/products/ba-fabric-strip-50.png?v=1587347996&width=1800',
-
       price: 63.10,
     ),
     Product(
@@ -157,7 +153,7 @@ class _HomeScreenState extends BasePageState<HomeScreen, HomeScreenBloc> {
                     child: const SearchWidget(),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 90, bottom: 20),
+                    padding: const EdgeInsets.only(top: 90, bottom: 20),
                     child: BannerWidget(banners: banners),
                   ),
                 ],

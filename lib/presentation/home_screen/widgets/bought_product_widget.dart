@@ -32,15 +32,15 @@ class BoughtProductWidget extends StatelessWidget {
                 },
                 child: Row(
                   children: [
-                    Text(
+                    const Text(
                       'View More',
-                      style: TextStyle(color: Colors.grey[800]),
+                      style: TextStyle(color: Colors.grey),
                     ),
-                    SizedBox(width: 4),
-                    Icon(
+                    const SizedBox(width: 4),
+                    const Icon(
                       Icons.arrow_forward_ios,
                       size: 16,
-                      color: Colors.grey[800],
+                      color: Colors.grey,
                     ),
                   ],
                 ),

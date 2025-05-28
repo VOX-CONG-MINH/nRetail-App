@@ -11,12 +11,12 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends BasePageState<MainScreen, MainScreenBloc> {
-  final List<Widget> _pages = [
-    const HomeScreen(),
-    const ShopScreen(),
-    const Placeholder(),
-    const Placeholder(),
-    const Placeholder(),
+  final List<Widget> _pages = const [
+    HomeScreen(),
+    ShopScreen(),
+    Placeholder(),
+    Placeholder(),
+    Placeholder(),
   ];
 
   @override
@@ -34,50 +34,40 @@ class _MainScreenState extends BasePageState<MainScreen, MainScreenBloc> {
             unselectedItemColor: Colors.grey,
             showUnselectedLabels: true,
             items: [
-              BottomNavigationBarItem(
-                icon: _buildIcon(
-                  assetPath: Assets.icons.icBotHomepage.path,
-                  assetPathFocus: Assets.icons.icBotHomepageFocus.path,
-                  selectedIndex: state.selectedIndex,
-                  index: 0,
-                ),
+              _buildNavBarItem(
+                assetPath: Assets.icons.icBotHomepage.path,
+                assetPathFocus: Assets.icons.icBotHomepageFocus.path,
                 label: 'Home',
+                selectedIndex: state.selectedIndex,
+                index: 0,
               ),
-              BottomNavigationBarItem(
-                icon: _buildIcon(
-                  assetPath: Assets.icons.icBotCategory.path,
-                  assetPathFocus: Assets.icons.icBotCategoryFocus.path,
-                  selectedIndex: state.selectedIndex,
-                  index: 1,
-                ),
+              _buildNavBarItem(
+                assetPath: Assets.icons.icBotCategory.path,
+                assetPathFocus: Assets.icons.icBotCategoryFocus.path,
                 label: 'Shop',
+                selectedIndex: state.selectedIndex,
+                index: 1,
               ),
-              BottomNavigationBarItem(
-                icon: _buildIcon(
-                  assetPath: Assets.icons.icBotMessenger.path,
-                  assetPathFocus: Assets.icons.icBotMessengerFocus.path,
-                  selectedIndex: state.selectedIndex,
-                  index: 2,
-                ),
+              _buildNavBarItem(
+                assetPath: Assets.icons.icBotMessenger.path,
+                assetPathFocus: Assets.icons.icBotMessengerFocus.path,
                 label: 'Messages',
+                selectedIndex: state.selectedIndex,
+                index: 2,
               ),
-              BottomNavigationBarItem(
-                icon: _buildIcon(
-                  assetPath: Assets.icons.icBotShop.path,
-                  assetPathFocus: Assets.icons.icBotShopFocus.path,
-                  selectedIndex: state.selectedIndex,
-                  index: 3,
-                ),
+              _buildNavBarItem(
+                assetPath: Assets.icons.icBotShop.path,
+                assetPathFocus: Assets.icons.icBotShopFocus.path,
                 label: 'Shop',
+                selectedIndex: state.selectedIndex,
+                index: 3,
               ),
-              BottomNavigationBarItem(
-                icon: _buildIcon(
-                  assetPath: Assets.icons.icBotAccount.path,
-                  assetPathFocus: Assets.icons.icBotAccountFocus.path,
-                  selectedIndex: state.selectedIndex,
-                  index: 4,
-                ),
+              _buildNavBarItem(
+                assetPath: Assets.icons.icBotAccount.path,
+                assetPathFocus: Assets.icons.icBotAccountFocus.path,
                 label: 'Account',
+                selectedIndex: state.selectedIndex,
+                index: 4,
               ),
             ],
           ),
@@ -86,16 +76,20 @@ class _MainScreenState extends BasePageState<MainScreen, MainScreenBloc> {
     );
   }
 
-  Widget _buildIcon({
+  BottomNavigationBarItem _buildNavBarItem({
     required String assetPath,
     required String assetPathFocus,
+    required String label,
     required int selectedIndex,
     required int index,
   }) {
-    return Image.asset(
-      selectedIndex == index ? assetPathFocus : assetPath,
-      width: 24,
-      height: 24,
+    return BottomNavigationBarItem(
+      icon: Image.asset(
+        selectedIndex == index ? assetPathFocus : assetPath,
+        width: 24,
+        height: 24,
+      ),
+      label: label,
     );
   }
 }

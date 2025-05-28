@@ -107,9 +107,9 @@ class ListProductWidget extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          child: const Divider(height: 1, thickness: 1),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 10),
+                          child: Divider(height: 1, thickness: 1),
                         ),
                       ],
                     ),

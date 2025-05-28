@@ -28,11 +28,14 @@ class SubCategoryWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.network(
-            subCategory.imageUrl,
-            width: 80,
-            height: 80,
-            fit: BoxFit.cover,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: Image.network(
+              subCategory.imageUrl,
+              width: 80,
+              height: 80,
+              fit: BoxFit.cover,
+            ),
           ),
           const SizedBox(height: 5),
           SingleChildScrollView(
@@ -42,6 +45,7 @@ class SubCategoryWidget extends StatelessWidget {
               textAlign: TextAlign.center,
               style: const TextStyle(fontWeight: FontWeight.bold),
               maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
           ),
         ],

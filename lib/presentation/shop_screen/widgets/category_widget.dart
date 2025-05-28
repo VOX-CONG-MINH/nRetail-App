@@ -8,38 +8,43 @@ class CategoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
       color: AppColors.primary,
       child: Row(
-        children: [
-          Text(
-            'Category',
-            style: TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
-          ),
-          Icon(Icons.arrow_forward_ios, size: 20, color: Colors.white),
-          Text(
-            'Agriculture',
-            style: TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
-          ),
-          Icon(Icons.arrow_forward_ios, size: 20, color: Colors.white),
-          Text(
-            'Nông Dược',
-            style: TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
-          ),
+        children: const [
+          _CategoryText('Category'),
+          _CategoryArrow(),
+          _CategoryText('Agriculture'),
+          _CategoryArrow(),
+          _CategoryText('Nông Dược'),
         ],
       ),
     );
+  }
+}
+
+class _CategoryText extends StatelessWidget {
+  final String text;
+  const _CategoryText(this.text);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: const TextStyle(
+        fontSize: 16.0,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
+    );
+  }
+}
+
+class _CategoryArrow extends StatelessWidget {
+  const _CategoryArrow();
+
+  @override
+  Widget build(BuildContext context) {
+    return Icon(Icons.arrow_forward_ios, size: 20, color: Colors.white);
   }
 }
