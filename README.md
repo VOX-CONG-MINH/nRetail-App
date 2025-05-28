@@ -1,16 +1,44 @@
 # nretail_app
 
-A new Flutter project.
+# Bài Tập Flutter
 
-## Getting Started
+## Bài Tập 1:Tạo màn hình home cho app theo design 
 
-This project is a starting point for a Flutter application.
+### Home1
 
-A few resources to get you started if this is your first Flutter project:
+Mô tả: Giao diện màn hình Home1.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Home1](images/home1.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+### Home2
+
+Mô tả: Giao diện màn hình Home2.
+
+![Home2](images/home2.png)
+
+---
+
+## Bài Tập 2: Shop1 & Shop2
+
+### Shop1
+
+Mô tả: Giao diện màn hình Shop1.
+
+![Shop1](images/shop1.png)
+
+---
+
+### Shop2
+
+Mô tả: Giao diện màn hình Shop2.
+
+![Shop2](images/shop2.png)
+
+---
+
+## Ghi chú
+
+- Các hình ảnh minh họa được lưu trong thư mục `images`.
+- Đây là các bài tập thực hành Flutter, mỗi bài tập tương ứng với một giao diện cụ thể.
