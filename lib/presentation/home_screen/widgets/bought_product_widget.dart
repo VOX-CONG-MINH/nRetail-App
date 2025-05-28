@@ -48,14 +48,14 @@ class BoughtProductWidget extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           height: 320,
           child: GridView.builder(
             scrollDirection: Axis.horizontal,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               mainAxisSpacing: 8,
-              crossAxisSpacing: 8,
               childAspectRatio: 0.8,
             ),
             itemCount: products.length > 10 ? 10 : products.length,
@@ -74,15 +74,19 @@ class BoughtProductWidget extends StatelessWidget {
       children: [
         Image.network(
           product.imageUrl,
-          width: 80,
-          height: 80,
+          width: 100,
+          height: 100,
           fit: BoxFit.cover,
         ),
         const SizedBox(height: 8),
-        Text(
-          product.name,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontWeight: FontWeight.bold),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Text(
+            product.name,
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontWeight: FontWeight.bold),
+            maxLines: 1,
+          ),
         ),
         Text(
           '₱ ${product.price}',

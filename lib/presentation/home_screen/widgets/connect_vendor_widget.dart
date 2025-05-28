@@ -48,7 +48,7 @@ class ConnectVendorWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 140,
+          height: 160,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: vendors.length,

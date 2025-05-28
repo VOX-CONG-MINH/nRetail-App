@@ -18,7 +18,7 @@ class BannerWidget extends StatelessWidget {
           children: [
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              height: 150,
+              height: 200,
               child: PageView.builder(
                 controller: _pageController,
                 itemCount: banners.length,
