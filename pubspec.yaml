@@ -1,0 +1,55 @@
+name: nretail_app
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  community_material_icon: ^5.9.55
+
+  # State management
+  flutter_bloc: ^8.1.5
+
+  # Freezed for union/sealed classes & data classes
+  freezed_annotation: ^2.4.1
+
+  # Dependency injection
+  injectable: ^2.4.2
+  get_it: ^8.0.3
+
+  # JSON serialization for entities
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Code generation for assets & resources
+  flutter_gen_runner: ^5.4.0
+  build_runner: ^2.4.9
+
+  # Freezed code generator
+  freezed: ^2.4.7
+  injectable_generator: ^2.6.1
+
+  # JSON serialization code generator
+  json_serializable: ^6.7.1
+
+flutter_gen:
+  output: lib/presentation/core/gen
+  line_length: 100
+
+  integrations:
+    flutter_svg: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
