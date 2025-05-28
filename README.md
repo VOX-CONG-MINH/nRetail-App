@@ -4,19 +4,11 @@
 
 ## Bài Tập 1:Tạo màn hình home cho app theo design 
 
-### Home1
-
-Mô tả: Giao diện màn hình Home1.
-
-![Home1](images/home1.png)
+![Home1](nRetail-App/images/home1.jpg)
 
 ---
 
-### Home2
-
-Mô tả: Giao diện màn hình Home2.
-
-![Home2](images/home2.png)
+![Home1](nRetail-App/images/home1.jpg)
 
 ---
 
