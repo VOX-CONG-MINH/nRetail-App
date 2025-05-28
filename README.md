@@ -1,36 +1,21 @@
-# nretail_app
+# nRetail App
 
-# Bài Tập Flutter
+## HOME UI
 
-## Bài Tập 1:Tạo màn hình home cho app theo design 
+<p float="left">
+  <img src="images/home1.png" width="48%" style="margin-right: 4%" />
+  <img src="images/home2.png" width="48%" />
+</p>
 
-![Home1](nRetail-App/images/home1.jpg)
+## SHOP UI
 
----
-
-![Home1](nRetail-App/images/home1.jpg)
-
----
-
-## Bài Tập 2: Shop1 & Shop2
-
-### Shop1
-
-Mô tả: Giao diện màn hình Shop1.
-
-![Shop1](images/shop1.png)
-
----
-
-### Shop2
-
-Mô tả: Giao diện màn hình Shop2.
-
-![Shop2](images/shop2.png)
+<p float="left">
+  <img src="images/shop1.png" width="48%" style="margin-right: 4%" />
+  <img src="images/shop2.png" width="48%" />
+</p>
 
 ---
 
 ## Ghi chú
 
 - Các hình ảnh minh họa được lưu trong thư mục `images`.
-- Đây là các bài tập thực hành Flutter, mỗi bài tập tương ứng với một giao diện cụ thể.
